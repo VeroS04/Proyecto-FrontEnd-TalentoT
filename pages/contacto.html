@@ -1,42 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Contacto</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="style-header">
-        <p class="style-name">
-            <a href="../index.html">OtakuChibiShop</a>
-        </p>
-        <nav class="style-nav">
-            <ul class="style-list-nav">
-                <li class="style-boton-nav">
-                    <a href="../index.html">HOME</a>
-                </li>
-                <li class="style-boton-nav">
-                    <a href="./contacto.html">CONTACTO</a>
-                </li>
-            </ul>
-        </nav>
+      <p class="style-name">
+        <a href="../index.html">OtakuChibiShop</a>
+      </p>
+      <nav class="style-nav">
+        <ul class="style-list-nav">
+          <li class="style-boton-nav">
+            <a href="../index.html">HOME</a>
+          </li>
+          <li class="style-boton-nav">
+            <a href="./contacto.html">CONTACTO</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="main-form">
+      <section class="section-form">
+        <h1 class="titulo-form">CONTACTO</h1>
+        <form
+          class="form"
+          action="https://formspree.io/f/xldpwdyg"
+          method="POST"
+        >
+          <div class="container-form">
+            <label class="correo">CORREO:</label>
+            <input class="correo-area" type="email" name="email" />
+          </div>
+          <div class="container-form">
+            <label class="mensaje">MENSAJE:</label>
+            <textarea class="mensaje-area" name="message"></textarea>
+          </div>
 
-        <p class="titulo-form">CONTACTO</p>
-        
-        <form class="form" action="https://formspree.io/f/xldpwdyg" method="POST">
-            <label class="correo">
-                CORREO:
-                <input class="correo-area" type="email" name="email">
-            </label>
-            <label class="mensaje">
-                MENSAJE:
-                <textarea class="mensaje-area" name="message"></textarea>
-            </label>
-        <button class="enviar" type="submit">Send</button>
+          <button class="enviar" type="submit">Send</button>
         </form>
+      </section>
     </main>
-</body>
+    <footer class="footer">
+      <p class="texto-footer">Diseñado por Vero</p>
+      <nav class="nav-footer">
+        <ul class="lista-footer">
+          <li class="botones-footer">Instagram</li>
+          <li class="botones-footer">TikTok</li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
 </html>
