@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header class="style-header">
+        <p class="style-name">OtakuChibi</p>
+        <nav class="style-nav">
+            <ul class="style-list-nav">
+                <li class="style-boton-nav">
+                    <a href="./index.html">HOME</a>
+                </li>
+                <li class="style-boton-nav">
+                    <a href="./pages/contacto.html">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-form">
+
+        <p class="titulo-form">CONTACTO</p>
+        
+        <form class="form" action="https://formspree.io/f/xldpwdyg" method="POST">
+            <label class="correo">
+                CORREO:
+                <input class="correo-area" type="email" name="email">
+            </label>
+            <label class="mensaje">
+                MENSAJE:
+                <textarea class="mensaje-area" name="message"></textarea>
+            </label>
+        <button class="enviar" type="submit">Send</button>
+        </form>
+    </main>
+</body>
+</html>
