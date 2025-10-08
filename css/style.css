@@ -4,11 +4,6 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-body {
-    min-height: 100vh;
-    line-height: 1.5;
-}
-
 a {
     text-decoration: none;
 }
@@ -19,14 +14,16 @@ a {
 .style-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 20px;
     background: #a7da8a;
     border-bottom: #EC7744 1px solid;
 }
 
 .style-name {
-    margin: 1%;
-    display: flex;
-    align-items: center;
+    margin: 0%;
+    flex: 1;
     font-size: 35px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #EC7744;
@@ -34,21 +31,23 @@ a {
 }
 
 .style-nav {
-    margin: 1%;
-    width: 10%;
+    flex: 1;
+    margin: auto;
+    padding: 1%;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
 }
 
 .style-list-nav {
     list-style-type: none;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: flex-end;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .style-boton-nav {
     font-size: 20px;
-    margin-top: 3%;
-    margin-left: 3%;
+    padding-right: 5%;
     color: #EC7744;
     text-shadow: -1px -1px 0 #EC7744,  1px -1px 0 #201D30, -1px  1px 0 #33d425, 1px  1px 0 #000;
 }
@@ -159,6 +158,7 @@ a {
 ---------------------------------------------------------------------------------------------------------------------*/
 
 .main {
+    width: 100%;
     min-height: 100vh;
     text-align: center;
     background: #5549b7;
@@ -196,6 +196,7 @@ a {
 .cards-container {
     display: flex;
     justify-content: space-evenly;
+    font-size: 0.8rem;
 }
 
 .card {
@@ -220,6 +221,8 @@ a {
 }
 
 .texto-section-cards {
+    width: 90%;
+    padding: 1%;
     margin-top: 4%;
     margin-bottom: 3%;
     color: #EC7744;
@@ -231,28 +234,101 @@ a {
 
 .footer {
     display: flex;
-    padding: 1%;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 20px;
     background-color: #201D30;
 }
 
 .texto-footer{
+    margin: 0%;
+    flex: 1;
     color: #8EDF5F;
-    margin-top: 0.5%;
 }
 
 .nav-footer {
-    width: 15%;
+    flex: 1;
+    margin: auto;
+    padding: 1%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .lista-footer {
     width: 100%;
     list-style: none;
     display: flex;
-    justify-content: space-evenly;
+    sgap: 20px;
+    justify-content: space-between;
     color: #8EDF5F;
 }
 
 /*------------------------------------------------------------------------------------------------------------------
                                            ESTILOS FOOTER
 ---------------------------------------------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------------------------------------------
+                                           ESTILOS RESPONSIVO
+---------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1327px) and (min-width: 824px) {
+
+    .card {
+        width: 22%;
+    }
+}
+
+@media screen and (max-width: 841px) {
+
+    .style-header{
+        width: 100%;
+        flex-direction: column;       
+        align-items: center;       
+        text-align: center;
+    }
+
+    .style-name, .style-nav {
+        flex-direction: column;       /* menú vertical */
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .texto-section-cards {
+        margin: auto;
+        font-size: 0.8rem;
+    }
+
+    .section-cards {
+        width: 90%;
+    }
+
+    .cards-container{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .card {
+        width: 50%;
+        margin: 2%;
+    }
+    
+        .titulo {
+        font-size: 1.5rem;
+    }
+
+    .texto-home {
+        font-size: 0.8rem;
+    }
+
+    .footer {
+        width: 100%;
+        flex-direction: column;       
+        align-items: center;       
+        text-align: center;
+    }
+
+}
+
