@@ -1,6 +1,7 @@
 * {
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -282,14 +283,14 @@ a {
 @media screen and (max-width: 841px) {
 
     .style-header{
-        width: 100%;
+
         flex-direction: column;       
         align-items: center;       
         text-align: center;
     }
 
     .style-name, .style-nav {
-        flex-direction: column;       /* menú vertical */
+        flex-direction: column;    
         gap: 10px;
         margin-top: 10px;
     }
@@ -321,6 +322,18 @@ a {
 
     .texto-home {
         font-size: 0.8rem;
+    }
+
+    .main-form {
+        width: 100%;
+    }
+
+    .section-form {
+        width: 80%;
+    }
+
+    .container-form {
+        padding: 2%;
     }
 
     .footer {
