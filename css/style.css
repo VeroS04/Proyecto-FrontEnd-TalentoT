@@ -31,7 +31,7 @@ a {
     text-shadow: -1px -1px 0 #EC7744,  1px -1px 0 #201D30, 1px  1px 0 #000;
 }
 
-.style-nav {
+.style-nav, .style-nav-carrito {
     flex: 1;
     margin: auto;
     padding: 1%;
@@ -163,7 +163,7 @@ a {
                                         ESTILOS MAIN
 ---------------------------------------------------------------------------------------------------------------------*/
 
-.main {
+.main, .main-carrito {
     width: 100%;
     min-height: 100vh;
     text-align: center;
