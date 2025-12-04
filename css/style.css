@@ -57,6 +57,10 @@ a {
     text-shadow: -1px -1px 0 #a10505,  1px -1px 0 #4adb37, -1px  1px 0 #ee1414, 1px  1px 0 #0de71f;
 }
 
+.carrito-icono {
+    display: flex;
+}
+
 /*------------------------------------------------------------------------------------------------------------------
                                        ESTILOS  HEADER
 ---------------------------------------------------------------------------------------------------------------------*/
@@ -235,6 +239,21 @@ a {
     color: #5549b7;
     border-radius: 5px;
     background-color: #0de71f;
+}
+
+.btn-eliminar {
+    padding: 1.5%;
+    color: #49b74f;
+    border-radius: 5px;
+    background-color: #e74b0d;
+}
+
+.btnVaciar {
+    margin-top: 2%;
+    padding: 1%;
+    color: #a3f0a7;
+    border-radius: 5px;
+    background-color: #3b2183;
 }
 
 /*------------------------------------------------------------------------------------------------------------------
