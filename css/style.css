@@ -85,7 +85,7 @@ a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #201D30;
+    background-color: #2c264e;
     border-radius: 15px;
     border: 1px solid black ;
 }
@@ -223,10 +223,18 @@ a {
 
 .texto-section-cards {
     width: 90%;
+    margin: auto;
     padding: 1%;
     margin-top: 4%;
     margin-bottom: 3%;
     color: #EC7744;
+}
+
+.btn-agregar {
+    padding: 1.5%;
+    color: #5549b7;
+    border-radius: 5px;
+    background-color: #0de71f;
 }
 
 /*------------------------------------------------------------------------------------------------------------------
