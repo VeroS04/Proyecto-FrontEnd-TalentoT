@@ -260,7 +260,7 @@ a {
     width: 100%;
     list-style: none;
     display: flex;
-    sgap: 20px;
+    gap: 20px;
     justify-content: space-between;
     color: #8EDF5F;
 }
